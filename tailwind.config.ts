@@ -9,7 +9,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        background:"#16161d",
+        'header-background':"#16161d",
+        'navBar-background':"#2c2c2c",
         textColor:"#ffffff",
       },
     },
