@@ -13,6 +13,9 @@ export default {
         'navBar-background':"#2c2c2c",
         textColor:"#ffffff",
       },
+      backgroundImage: {
+        "billBoard-background": 'url(/images/BillBoard.jpg)',
+      },
     },
   },
   plugins: [],
