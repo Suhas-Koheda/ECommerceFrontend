@@ -8,7 +8,7 @@ export default function LevelUp() {
                 <h3 className="text-3xl font-bold text-white">Level Up your desk</h3>
                 <p className="w-full p-4 md:w-1/2 text-white">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                    Lorem Ipsum has been the standard dummy text ever since the 1500s.
                 </p>
                 <Link
                     href="/workspace"
