@@ -7,6 +7,7 @@ import Collection from "@/app/(components)/Collection/Collection";
 import Product from "@/app/(components)/Products/Product";
 import ProductPage from "@/app/(components)/Products/ProductPage";
 import TestimonialCarousel from "@/app/(components)/Testimonials/TestimonialCarousel";
+import Offers from "@/app/(components)/Offers";
 
 export default function Home() {
 
@@ -143,7 +144,7 @@ export default function Home() {
             />
             <ProductPage/>
             <Categories categories={offers}/>
-            <TestimonialCarousel testimonials={testimonials} />
+            <Offers offers={offers} />
             <Footer/>
         </div>
     );
