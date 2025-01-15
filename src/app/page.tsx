@@ -143,7 +143,6 @@ export default function Home() {
                 type="2"
             />
             <ProductPage/>
-            <Categories categories={offers}/>
             <Offers offers={offers} />
             <TestimonialCarousel testimonials={testimonials}/>
             <Footer/>
