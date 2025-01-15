@@ -2,7 +2,7 @@ import CategoryCarousel from "@/app/(components)/Category/CategoryCarousel";
 import Link from "next/link";
 
 export default function Categories() {
-    return (<div className="px-2">
+    return (<div className="px-8 p-16">
         <div className="flex justify-between items-center px-4">
             <h1 className="text-2xl font-semibold p-2">Shop By Category</h1>
             <Link href={"/categories"} className="text-l font-semibold p-2 hidden md:block">Browse all categories</Link></div>

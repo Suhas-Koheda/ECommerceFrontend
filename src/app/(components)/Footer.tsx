@@ -26,8 +26,8 @@ export default function Footer() {
     ];
 
     return (
-        <footer className="bg-gray-900 text-white py-8 px-6 md:px-16 ">
-            <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 ">
+        <footer className="bg-gray-900 text-white py-20 px-6 md:px-16 ">
+            <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-0 ">
                 {footerData.map((section, index) => (
                     <div key={index} className="p-4 text-center">
                         <h5 className="font-bold mb-4 py-2">{section.title}</h5>
@@ -51,7 +51,7 @@ export default function Footer() {
                         <input
                             type="email"
                             placeholder="Enter your email"
-                            className="p-2 rounded-lg bg-gray-800 text-white focus:outline-none flex-grow text-center md:w-40"
+                            className="p-2 rounded-lg bg-gray-800 text-white focus:outline-none flex-grow text-center md:w-44"
                         />
                         <button className="bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-2 rounded-lg w-full">
                             Sign up
@@ -60,7 +60,7 @@ export default function Footer() {
                 </div>
             </div>
             <div className="mt-8 border-t border-gray-700 pt-4 text-center text-sm">
-                Copyright © 2021 Your Company, Inc.
+                Copyright © 2025 Your Company, Inc.
             </div>
         </footer>
     );

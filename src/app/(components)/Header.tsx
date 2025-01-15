@@ -18,6 +18,10 @@ export default function Header() {
 
     return (
         <header className="page-header">
+            <div className="flex justify-end bg-header-background text-textColor">
+                <p className="p-2">Sign In</p>
+                <p className="p-2">Create an account</p>
+            </div>
             <div className="flex justify-between items-center p-4 bg-navBar-background text-white">
                 <button
                     onClick={toggleSidebar}
@@ -26,7 +30,7 @@ export default function Header() {
                     <span className="material-icons">menu</span>
                 </button>
                 <div className="flex items-center">
-                    <Image src={logo} alt="Logo" width={50} height={50} />
+                    <Image src={logo} alt="Logo" width={50} height={50}/>
                 </div>
                 <nav className="hidden md:flex space-x-4 ml-4">
                     {Pages.map((item, index) => (
@@ -42,7 +46,7 @@ export default function Header() {
                 <div className="hidden md:flex items-center space-x-4">
                     <Link href="/" className="p-2">Search</Link>
                     <Link href="/" className="p-2">Help</Link>
-                    <Image src={logo} alt="Cart Image" width={30} height={20} />
+                    <Image src={logo} alt="Cart Image" width={30} height={20}/>
                     <p className="p-2">0</p>
                 </div>
             </div>
@@ -70,7 +74,7 @@ export default function Header() {
                 <div className="p-4">
                     <Link href="/" className="p-2 block">Search</Link>
                     <Link href="/" className="p-2 block">Help</Link>
-                    <Image src={logo} alt="Cart Image" width={30} height={20} />
+                    <Image src={logo} alt="Cart Image" width={30} height={20}/>
                     <p className="p-2">0</p>
                 </div>
             </div>
