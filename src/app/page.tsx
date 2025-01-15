@@ -145,6 +145,7 @@ export default function Home() {
             <ProductPage/>
             <Categories categories={offers}/>
             <Offers offers={offers} />
+            <TestimonialCarousel testimonials={testimonials}/>
             <Footer/>
         </div>
     );

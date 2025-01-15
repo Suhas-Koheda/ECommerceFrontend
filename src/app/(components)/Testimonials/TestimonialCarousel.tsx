@@ -13,7 +13,7 @@ const TestimonialCarousel = ({ testimonials }: { testimonials: Array<{ imageUrl:
         }, 5000); // 5000ms = 5 seconds
 
         return () => clearInterval(interval);
-    }, [currentIndex]);
+    }, [currentIndex,nextIndex]);
 
     return (
         <div className="items-center flex flex-col text-lg font-semibold p-16">

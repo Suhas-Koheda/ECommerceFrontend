@@ -1,5 +1,4 @@
 import CategoryToken from "@/app/(components)/Category/CategoryToken";
-import Link from "next/link";
 
 export default function CategoryCarousel({ categories }: { categories: string[][] }) {
     return (
