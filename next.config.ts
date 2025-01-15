@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+    images: {
+        domains: ['img.icons8.com','fullyfilmy.in'], // Allow external images from this domain
+    },
 };
 
 export default nextConfig;

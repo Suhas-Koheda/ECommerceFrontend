@@ -25,14 +25,14 @@ export default function Header() {
             <div className="flex justify-between items-center p-4 bg-navBar-background text-white">
                 <button
                     onClick={toggleSidebar}
-                    className="md:hidden text-white p-2"
+                    className="md:hidden text-white"
                 >
-                    <span className="material-icons">menu</span>
+                    <Image src={"https://img.icons8.com/?size=100&id=36389&format=png&color=FFFFFF"} alt={"Menu Bar"} width={30} height={50} className="items-center"/>
                 </button>
                 <div className="flex items-center">
                     <Image src={logo} alt="Logo" width={50} height={50}/>
                 </div>
-                <nav className="hidden md:flex space-x-4 ml-4">
+                <nav className="hidden md:flex space-x-4 ml-4 items-center">
                     {Pages.map((item, index) => (
                         <Link
                             key={index}
@@ -46,7 +46,7 @@ export default function Header() {
                 <div className="hidden md:flex items-center space-x-4">
                     <Link href="/" className="p-2">Search</Link>
                     <Link href="/" className="p-2">Help</Link>
-                    <Image src={logo} alt="Cart Image" width={30} height={20}/>
+                    <Image src={"https://img.icons8.com/?size=100&id=85180&format=png&color=FFFFFF"} alt="Cart Image" width={30} height={20}/>
                     <p className="p-2">0</p>
                 </div>
             </div>
@@ -74,8 +74,11 @@ export default function Header() {
                 <div className="p-4">
                     <Link href="/" className="p-2 block">Search</Link>
                     <Link href="/" className="p-2 block">Help</Link>
-                    <Image src={logo} alt="Cart Image" width={30} height={20}/>
-                    <p className="p-2">0</p>
+                    <div className="flex items-center p-2">
+                        <Image src={"https://img.icons8.com/?size=100&id=85180&format=png&color=FFFFFF"}
+                               alt="Cart Image" width={30} height={20}/>
+                        <p className="p-2">0</p>
+                    </div>
                 </div>
             </div>
             <div
