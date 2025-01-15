@@ -5,11 +5,11 @@ import LevelUp from "@/app/(components)/LevelUp";
 import Footer from "@/app/(components)/Footer";
 import Collection from "@/app/(components)/Collection/Collection";
 import Product from "@/app/(components)/Products/Product";
-// import Offers from "@/app/(components)/Offers";
-// import Testimonials from "@/app/(components)/Testimonials";
 import ProductPage from "@/app/(components)/Products/ProductPage";
+import TestimonialCarousel from "@/app/(components)/Testimonials/TestimonialCarousel";
 
 export default function Home() {
+
 
     const dummyProducts = [
         [
@@ -70,11 +70,58 @@ export default function Home() {
         ],
     ];
 
+    const categories = [
+        ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBtZVYo2mMRzpxwqV402davYhLw2_L-MWqoA&s", "Category 1", "/category/1"],
+        ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBtZVYo2mMRzpxwqV402davYhLw2_L-MWqoA&s", "Category 2", "/category/2"],
+        ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBtZVYo2mMRzpxwqV402davYhLw2_L-MWqoA&s", "Category 3", "/category/3"],
+        ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBtZVYo2mMRzpxwqV402davYhLw2_L-MWqoA&s", "Category 4", "/category/4"],
+        ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBtZVYo2mMRzpxwqV402davYhLw2_L-MWqoA&s", "Category 5", "/category/5"],
+        ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBtZVYo2mMRzpxwqV402davYhLw2_L-MWqoA&s", "Category 6", "/category/6"],
+        ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBtZVYo2mMRzpxwqV402davYhLw2_L-MWqoA&s", "Category 1", "/category/1"],
+        ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBtZVYo2mMRzpxwqV402davYhLw2_L-MWqoA&s", "Category 2", "/category/2"],
+        ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBtZVYo2mMRzpxwqV402davYhLw2_L-MWqoA&s", "Category 3", "/category/3"],
+        ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBtZVYo2mMRzpxwqV402davYhLw2_L-MWqoA&s", "Category 4", "/category/4"],
+        ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBtZVYo2mMRzpxwqV402davYhLw2_L-MWqoA&s", "Category 5", "/category/5"],
+        ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBtZVYo2mMRzpxwqV402davYhLw2_L-MWqoA&s", "Category 6", "/category/6"]
+    ];
+
+    const offers = [
+        ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBtZVYo2mMRzpxwqV402davYhLw2_L-MWqoA&s", "50% Off on Category 1", "/offer/1"],
+        ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBtZVYo2mMRzpxwqV402davYhLw2_L-MWqoA&s", "Buy 1 Get 1 Free on Category 2", "/offer/2"],
+        ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBtZVYo2mMRzpxwqV402davYhLw2_L-MWqoA&s", "20% Off on Category 3", "/offer/3"],
+        ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBtZVYo2mMRzpxwqV402davYhLw2_L-MWqoA&s", "Free Shipping on Category 4", "/offer/4"],
+        ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBtZVYo2mMRzpxwqV402davYhLw2_L-MWqoA&s", "25% Off on Category 5", "/offer/5"],
+        ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBtZVYo2mMRzpxwqV402davYhLw2_L-MWqoA&s", "Limited Time Offer on Category 6", "/offer/6"],
+        ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBtZVYo2mMRzpxwqV402davYhLw2_L-MWqoA&s", "50% Off on Category 1", "/offer/1"],
+        ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBtZVYo2mMRzpxwqV402davYhLw2_L-MWqoA&s", "Buy 1 Get 1 Free on Category 2", "/offer/2"],
+        ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBtZVYo2mMRzpxwqV402davYhLw2_L-MWqoA&s", "20% Off on Category 3", "/offer/3"],
+        ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBtZVYo2mMRzpxwqV402davYhLw2_L-MWqoA&s", "Free Shipping on Category 4", "/offer/4"],
+        ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBtZVYo2mMRzpxwqV402davYhLw2_L-MWqoA&s", "25% Off on Category 5", "/offer/5"],
+        ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBtZVYo2mMRzpxwqV402davYhLw2_L-MWqoA&s", "Limited Time Offer on Category 6", "/offer/6"]
+    ];
+
+
+
+    const testimonials = [
+        {
+            imageUrl: "https://randomuser.me/api/portraits/men/32.jpg",
+            quote: "This is an amazing product!",
+            name: "John Doe",
+            title: "CEO, Example Corp"
+        },
+        {
+            imageUrl: "https://randomuser.me/api/portraits/men/33.jpg",
+            quote: "I love this service!",
+            name: "Jane Smith",
+            title: "Product Manager, Tech Co."
+        },
+    ];
+
     return (
         <div className="page">
             <Header/>
             <BillBoard imageLink={"/images/BillBoard.jpg"}/>
-            <Categories/>
+            <Categories categories={categories}/>
             <LevelUp heading="Level Up your desk" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     Lorem Ipsum has been the standard dummy text ever since the 1500s." buttonText="Shop Workspace" imageLink="/images/BillBoard.jpg"/>
             <Collection/>
@@ -95,6 +142,8 @@ export default function Home() {
                 type="2"
             />
             <ProductPage/>
+            <Categories categories={offers}/>
+            <TestimonialCarousel testimonials={testimonials} />
             <Footer/>
         </div>
     );
