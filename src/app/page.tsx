@@ -5,8 +5,8 @@ import LevelUp from "@/app/(components)/LevelUp";
 import Footer from "@/app/(components)/Footer";
 import Collection from "@/app/(components)/Collection/Collection";
 import Product from "@/app/(components)/Products/Product";
-import Offers from "@/app/(components)/Offers";
-import Testimonials from "@/app/(components)/Testimonials";
+// import Offers from "@/app/(components)/Offers";
+// import Testimonials from "@/app/(components)/Testimonials";
 import ProductPage from "@/app/(components)/Products/ProductPage";
 
 export default function Home() {
