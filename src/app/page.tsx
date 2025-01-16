@@ -8,6 +8,7 @@ import Product from "@/app/(components)/Products/Product";
 import ProductPage from "@/app/(components)/Products/ProductPage";
 import TestimonialCarousel from "@/app/(components)/Testimonials/TestimonialCarousel";
 import Offers from "@/app/(components)/Offers";
+import CartPage from "@/app/(components)/Cart/CartPage";
 
 export default function Home() {
 
@@ -145,6 +146,7 @@ export default function Home() {
             <ProductPage/>
             <Offers offers={offers} />
             <TestimonialCarousel testimonials={testimonials}/>
+            <CartPage/>
             <Footer/>
         </div>
     );
