@@ -11,6 +11,7 @@ import Offers from "@/app/(components)/Offers";
 import CartPage from "@/app/(components)/Cart/CartPage";
 import OrderDetailPage from "@/app/(components)/Cart/OrderDetailPage";
 import BillingPage from "@/app/(components)/BillingPage";
+import CategoryPages from "@/app/(components)/CategoryPages";
 
 export default function Home() {
 
